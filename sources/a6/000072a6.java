@@ -1,0 +1,34 @@
+package h5;
+
+import android.content.Context;
+import android.os.Build;
+import androidx.work.q;
+import androidx.work.r;
+import k5.p;
+
+/* loaded from: classes.dex */
+public class e extends c<g5.b> {
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final String f28892e = q.f("NetworkMeteredCtrlr");
+
+    public e(Context context, m5.a aVar) {
+        super(i5.g.c(context, aVar).d());
+    }
+
+    @Override // h5.c
+    boolean b(p pVar) {
+        return pVar.f34414j.b() == r.METERED;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // h5.c
+    /* renamed from: i */
+    public boolean c(g5.b bVar) {
+        if (Build.VERSION.SDK_INT >= 26) {
+            return (bVar.a() && bVar.b()) ? false : true;
+        }
+        q.c().a(f28892e, "Metered network constraint is not supported before API 26, only checking for connected state.", new Throwable[0]);
+        return !bVar.a();
+    }
+}

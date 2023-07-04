@@ -1,0 +1,39 @@
+package com.google.android.gms.internal.mlkit_vision_text_common;
+
+import lm.b;
+import lm.c;
+import lm.d;
+
+/* loaded from: classes3.dex */
+final class zzik implements c {
+    static final zzik zza = new zzik();
+    private static final b zzb;
+    private static final b zzc;
+    private static final b zzd;
+
+    static {
+        b.C0705b a11 = b.a("languageOption");
+        zzcv zzcvVar = new zzcv();
+        zzcvVar.zza(3);
+        zzb = a11.b(zzcvVar.zzb()).a();
+        b.C0705b a12 = b.a("isUsingLegacyApi");
+        zzcv zzcvVar2 = new zzcv();
+        zzcvVar2.zza(4);
+        zzc = a12.b(zzcvVar2.zzb()).a();
+        b.C0705b a13 = b.a("sdkVersion");
+        zzcv zzcvVar3 = new zzcv();
+        zzcvVar3.zza(5);
+        zzd = a13.b(zzcvVar3.zzb()).a();
+    }
+
+    private zzik() {
+    }
+
+    @Override // lm.c
+    public final /* bridge */ /* synthetic */ void encode(Object obj, Object obj2) {
+        d dVar = (d) obj2;
+        dVar.add(zzb, ((zzmq) obj).zza());
+        dVar.add(zzc, (Object) null);
+        dVar.add(zzd, (Object) null);
+    }
+}

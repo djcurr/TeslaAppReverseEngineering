@@ -1,0 +1,138 @@
+package com.google.android.gms.internal.mlkit_vision_barcode;
+
+import mm.a;
+import mm.b;
+
+/* loaded from: classes3.dex */
+public final class zzjm implements a {
+    public static final a zza = new zzjm();
+
+    private zzjm() {
+    }
+
+    @Override // mm.a
+    public final void configure(b bVar) {
+        bVar.mo185registerEncoder(zzlf.class, zzhf.zza);
+        bVar.mo185registerEncoder(zzng.class, zzje.zza);
+        bVar.mo185registerEncoder(zzlg.class, zzhg.zza);
+        bVar.mo185registerEncoder(zzlj.class, zzhi.zza);
+        bVar.mo185registerEncoder(zzlh.class, zzhh.zza);
+        bVar.mo185registerEncoder(zzli.class, zzhj.zza);
+        bVar.mo185registerEncoder(zzkg.class, zzgo.zza);
+        bVar.mo185registerEncoder(zzkf.class, zzgn.zza);
+        bVar.mo185registerEncoder(zzku.class, zzgy.zza);
+        bVar.mo185registerEncoder(zzna.class, zziw.zza);
+        bVar.mo185registerEncoder(zzke.class, zzgm.zza);
+        bVar.mo185registerEncoder(zzkd.class, zzgl.zza);
+        bVar.mo185registerEncoder(zzly.class, zzhu.zza);
+        bVar.mo185registerEncoder(zzob.class, zzgu.zza);
+        bVar.mo185registerEncoder(zzkq.class, zzgw.zza);
+        bVar.mo185registerEncoder(zzkm.class, zzgt.zza);
+        bVar.mo185registerEncoder(zzlz.class, zzhv.zza);
+        bVar.mo185registerEncoder(zzmx.class, zzit.zza);
+        bVar.mo185registerEncoder(zzmy.class, zziu.zza);
+        bVar.mo185registerEncoder(zzmw.class, zzis.zza);
+        bVar.mo185registerEncoder(zzlr.class, zzhp.zza);
+        bVar.mo185registerEncoder(zzoa.class, zzfv.zza);
+        bVar.mo185registerEncoder(zzlu.class, zzhq.zza);
+        bVar.mo185registerEncoder(zzma.class, zzhw.zza);
+        bVar.mo185registerEncoder(zzmd.class, zzhz.zza);
+        bVar.mo185registerEncoder(zzmc.class, zzhy.zza);
+        bVar.mo185registerEncoder(zzmb.class, zzhx.zza);
+        bVar.mo185registerEncoder(zzmi.class, zzie.zza);
+        bVar.mo185registerEncoder(zzmj.class, zzif.zza);
+        bVar.mo185registerEncoder(zzml.class, zzih.zza);
+        bVar.mo185registerEncoder(zzmk.class, zzig.zza);
+        bVar.mo185registerEncoder(zzlm.class, zzho.zza);
+        bVar.mo185registerEncoder(zzmm.class, zzii.zza);
+        bVar.mo185registerEncoder(zzmn.class, zzij.zza);
+        bVar.mo185registerEncoder(zzmo.class, zzik.zza);
+        bVar.mo185registerEncoder(zzmp.class, zzil.zza);
+        bVar.mo185registerEncoder(zzmv.class, zziq.zza);
+        bVar.mo185registerEncoder(zzmu.class, zzir.zza);
+        bVar.mo185registerEncoder(zzmh.class, zzia.zza);
+        bVar.mo185registerEncoder(zzky.class, zzhd.zza);
+        bVar.mo185registerEncoder(zzmf.class, zzic.zza);
+        bVar.mo185registerEncoder(zzme.class, zzib.zza);
+        bVar.mo185registerEncoder(zzmg.class, zzid.zza);
+        bVar.mo185registerEncoder(zzmz.class, zziv.zza);
+        bVar.mo185registerEncoder(zznk.class, zzji.zza);
+        bVar.mo185registerEncoder(zzjs.class, zzga.zza);
+        bVar.mo185registerEncoder(zzjq.class, zzfy.zza);
+        bVar.mo185registerEncoder(zzjp.class, zzfx.zza);
+        bVar.mo185registerEncoder(zzjr.class, zzfz.zza);
+        bVar.mo185registerEncoder(zzju.class, zzgc.zza);
+        bVar.mo185registerEncoder(zzjt.class, zzgb.zza);
+        bVar.mo185registerEncoder(zzjv.class, zzgd.zza);
+        bVar.mo185registerEncoder(zzjw.class, zzge.zza);
+        bVar.mo185registerEncoder(zzjx.class, zzgf.zza);
+        bVar.mo185registerEncoder(zzjy.class, zzgg.zza);
+        bVar.mo185registerEncoder(zzjz.class, zzgh.zza);
+        bVar.mo185registerEncoder(zzer.class, zzfr.zza);
+        bVar.mo185registerEncoder(zzet.class, zzft.zza);
+        bVar.mo185registerEncoder(zzes.class, zzfs.zza);
+        bVar.mo185registerEncoder(zzkw.class, zzhb.zza);
+        bVar.mo185registerEncoder(zzkh.class, zzgp.zza);
+        bVar.mo185registerEncoder(zzds.class, zzev.zza);
+        bVar.mo185registerEncoder(zzdr.class, zzew.zza);
+        bVar.mo185registerEncoder(zzkk.class, zzgr.zza);
+        bVar.mo185registerEncoder(zzdu.class, zzex.zza);
+        bVar.mo185registerEncoder(zzdt.class, zzey.zza);
+        bVar.mo185registerEncoder(zzee.class, zzfd.zza);
+        bVar.mo185registerEncoder(zzed.class, zzfe.zza);
+        bVar.mo185registerEncoder(zzea.class, zzez.zza);
+        bVar.mo185registerEncoder(zzdy.class, zzfa.zza);
+        bVar.mo185registerEncoder(zzeg.class, zzff.zza);
+        bVar.mo185registerEncoder(zzef.class, zzfg.zza);
+        bVar.mo185registerEncoder(zzei.class, zzfh.zza);
+        bVar.mo185registerEncoder(zzeh.class, zzfi.zza);
+        bVar.mo185registerEncoder(zzeq.class, zzfp.zza);
+        bVar.mo185registerEncoder(zzep.class, zzfq.zza);
+        bVar.mo185registerEncoder(zzek.class, zzfj.zza);
+        bVar.mo185registerEncoder(zzej.class, zzfk.zza);
+        bVar.mo185registerEncoder(zzem.class, zzfl.zza);
+        bVar.mo185registerEncoder(zzel.class, zzfm.zza);
+        bVar.mo185registerEncoder(zzns.class, zziz.zza);
+        bVar.mo185registerEncoder(zznl.class, zzgq.zza);
+        bVar.mo185registerEncoder(zznp.class, zzhn.zza);
+        bVar.mo185registerEncoder(zzno.class, zzhm.zza);
+        bVar.mo185registerEncoder(zznm.class, zzgv.zza);
+        bVar.mo185registerEncoder(zznr.class, zziy.zza);
+        bVar.mo185registerEncoder(zznq.class, zzix.zza);
+        bVar.mo185registerEncoder(zznt.class, zzja.zza);
+        bVar.mo185registerEncoder(zznn.class, zzgz.zza);
+        bVar.mo185registerEncoder(zznw.class, zzjk.zza);
+        bVar.mo185registerEncoder(zznv.class, zzjl.zza);
+        bVar.mo185registerEncoder(zznu.class, zzjj.zza);
+        bVar.mo185registerEncoder(zznb.class, zzjb.zza);
+        bVar.mo185registerEncoder(zzkv.class, zzha.zza);
+        bVar.mo185registerEncoder(zzkz.class, zzhe.zza);
+        bVar.mo185registerEncoder(zzjo.class, zzfw.zza);
+        bVar.mo185registerEncoder(zzkr.class, zzgx.zza);
+        bVar.mo185registerEncoder(zzkx.class, zzhc.zza);
+        bVar.mo185registerEncoder(zzkl.class, zzgs.zza);
+        bVar.mo185registerEncoder(zzll.class, zzhl.zza);
+        bVar.mo185registerEncoder(zzlk.class, zzhk.zza);
+        bVar.mo185registerEncoder(zzdq.class, zzeu.zza);
+        bVar.mo185registerEncoder(zznh.class, zzjf.zza);
+        bVar.mo185registerEncoder(zznj.class, zzjh.zza);
+        bVar.mo185registerEncoder(zzni.class, zzjg.zza);
+        bVar.mo185registerEncoder(zzjn.class, zzfu.zza);
+        bVar.mo185registerEncoder(zzkc.class, zzgk.zza);
+        bVar.mo185registerEncoder(zzkb.class, zzgj.zza);
+        bVar.mo185registerEncoder(zzka.class, zzgi.zza);
+        bVar.mo185registerEncoder(zzlv.class, zzhr.zza);
+        bVar.mo185registerEncoder(zzlx.class, zzht.zza);
+        bVar.mo185registerEncoder(zzlw.class, zzhs.zza);
+        bVar.mo185registerEncoder(zzec.class, zzfb.zza);
+        bVar.mo185registerEncoder(zzeb.class, zzfc.zza);
+        bVar.mo185registerEncoder(zzmq.class, zzim.zza);
+        bVar.mo185registerEncoder(zzmt.class, zzip.zza);
+        bVar.mo185registerEncoder(zzmr.class, zzin.zza);
+        bVar.mo185registerEncoder(zzms.class, zzio.zza);
+        bVar.mo185registerEncoder(zzeo.class, zzfn.zza);
+        bVar.mo185registerEncoder(zzen.class, zzfo.zza);
+        bVar.mo185registerEncoder(zznd.class, zzjd.zza);
+        bVar.mo185registerEncoder(zznc.class, zzjc.zza);
+    }
+}

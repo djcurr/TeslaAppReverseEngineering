@@ -1,0 +1,35 @@
+package com.stripe.android.ui.core.elements;
+
+import c1.i;
+import com.stripe.android.ui.core.elements.TextFieldIcon;
+import h00.p;
+import java.util.List;
+import kotlin.jvm.internal.u;
+import vz.b0;
+
+/* JADX INFO: Access modifiers changed from: package-private */
+/* loaded from: classes6.dex */
+public final class TextFieldUIKt$AnimatedIcons$3 extends u implements p<i, Integer, b0> {
+    final /* synthetic */ int $$changed;
+    final /* synthetic */ List<TextFieldIcon.Trailing> $icons;
+    final /* synthetic */ boolean $loading;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public TextFieldUIKt$AnimatedIcons$3(List<TextFieldIcon.Trailing> list, boolean z11, int i11) {
+        super(2);
+        this.$icons = list;
+        this.$loading = z11;
+        this.$$changed = i11;
+    }
+
+    @Override // h00.p
+    public /* bridge */ /* synthetic */ b0 invoke(i iVar, Integer num) {
+        invoke(iVar, num.intValue());
+        return b0.f54756a;
+    }
+
+    public final void invoke(i iVar, int i11) {
+        TextFieldUIKt.AnimatedIcons(this.$icons, this.$loading, iVar, this.$$changed | 1);
+    }
+}

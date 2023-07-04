@@ -1,0 +1,254 @@
+package rc;
+
+import java.util.HashMap;
+
+/* loaded from: classes.dex */
+public class c {
+
+    /* renamed from: a  reason: collision with root package name */
+    private static HashMap<Integer, HashMap<String, String>> f49335a = new HashMap<>();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static HashMap<String, String> f49336b = new HashMap<>();
+
+    /* renamed from: c  reason: collision with root package name */
+    private static HashMap<String, String> f49337c = new HashMap<>();
+
+    /* renamed from: d  reason: collision with root package name */
+    private static HashMap<String, String> f49338d = new HashMap<>();
+
+    /* renamed from: e  reason: collision with root package name */
+    public static HashMap<String, String> f49339e = new HashMap<>();
+
+    static {
+        f49335a.put(4096, f49336b);
+        f49335a.put(10, f49337c);
+        f49335a.put(769, f49338d);
+        f49335a.put(1, f49339e);
+        f49337c.put("3IVX", "3ivx MPEG-4");
+        f49337c.put("3IV1", "3ivx MPEG-4 v1");
+        f49337c.put("3IV2", "3ivx MPEG-4 v2");
+        f49337c.put("avr ", "AVR-JPEG");
+        f49337c.put("base", "Base");
+        f49337c.put("WRLE", "BMP");
+        f49337c.put("cvid", "Cinepak");
+        f49337c.put("clou", "Cloud");
+        f49337c.put("cmyk", "CMYK");
+        f49337c.put("yuv2", "ComponentVideo");
+        f49337c.put("yuvu", "ComponentVideoSigned");
+        f49337c.put("yuvs", "ComponentVideoUnsigned");
+        f49337c.put("dvc ", "DVC-NTSC");
+        f49337c.put("dvcp", "DVC-PAL");
+        f49337c.put("dvpn", "DVCPro-NTSC");
+        f49337c.put("dvpp", "DVCPro-PAL");
+        f49337c.put("fire", "Fire");
+        f49337c.put("flic", "FLC");
+        f49337c.put("b48r", "48RGB");
+        f49337c.put("gif ", "GIF");
+        f49337c.put("smc ", "Graphics");
+        f49337c.put("h261", "Apple H261");
+        f49337c.put("h263", "Apple VC H.263");
+        f49337c.put("IV41", "Indeo4");
+        f49337c.put("jpeg", "JPEG");
+        f49337c.put("PNTG", "MacPaint");
+        f49337c.put("msvc", "Microsoft Video1");
+        f49337c.put("mjpa", "Apple Motion JPEG-A");
+        f49337c.put("mjpb", "Apple Motion JPEG-B");
+        f49337c.put("myuv", "MPEG YUV420");
+        f49337c.put("dmb1", "OpenDML JPEG");
+        f49337c.put("kpcd", "PhotoCD");
+        f49337c.put("8BPS", "Planar RGB");
+        f49337c.put("png ", "PNG");
+        f49337c.put("qdrw", "QuickDraw");
+        f49337c.put("qdgx", "QuickDrawGX");
+        f49337c.put("raw ", "RAW");
+        f49337c.put(".SGI", "SGI");
+        f49337c.put("b16g", "16Gray");
+        f49337c.put("b64a", "64ARGB");
+        f49337c.put("SVQ1", "Sorenson Video 1");
+        f49337c.put("SVQ3", "Sorenson Video 3");
+        f49337c.put("syv9", "Sorenson YUV9");
+        f49337c.put("tga ", "Targa");
+        f49337c.put("b32a", "32AlphaGray");
+        f49337c.put("tiff", "TIFF");
+        f49337c.put("path", "Vector");
+        f49337c.put("rpza", "Video (Road Pizza)");
+        f49337c.put("ripl", "WaterRipple");
+        f49337c.put("WRAW", "Windows RAW");
+        f49337c.put("y420", "YUV420");
+        f49337c.put("avc1", "H.264");
+        f49337c.put("mp4v", "MPEG-4");
+        f49337c.put("MP4V", "MPEG-4");
+        f49337c.put("dvhp", "DVCPRO HD 720p60");
+        f49337c.put("hdv2", "HDV 1080i60");
+        f49337c.put("dvc+", "DV/DVCPRO - NTSC");
+        f49337c.put("mx5p", "MPEG2 IMX 635/50 50mb/s");
+        f49337c.put("mx3n", "MPEG2 IMX 635/50 30mb/s");
+        f49337c.put("dv5p", "DVCPRO50");
+        f49337c.put("hdv3", "HDV Final Cut Pro");
+        f49337c.put("rle ", "Animation");
+        f49337c.put("rle ", "Animation");
+        f49337c.put("2vuY", "Uncompressed Y'CbCr, 8-bit-per-component 4:2:2");
+        f49337c.put("v308", "Uncompressed Y'CbCr, 8-bit-per-component 4:4:4");
+        f49337c.put("v408", "Uncompressed Y'CbCr, 8-bit-per-component 4:4:4:4");
+        f49337c.put("v216", "Uncompressed Y'CbCr, 10, 12, 14, or 16-bit-per-component 4:2:2");
+        f49337c.put("v410", "Uncompressed Y'CbCr, 10-bit-per-component 4:4:4");
+        f49337c.put("v210", "Uncompressed Y'CbCr, 10-bit-per-component 4:2:2");
+        f49338d.put("NONE", "");
+        f49338d.put("raw ", "Uncompressed in offset-binary format");
+        f49338d.put("twos", "Uncompressed in two's-complement format");
+        f49338d.put("sowt", "16-bit little-endian, twos-complement");
+        f49338d.put("MAC3", "MACE 3:1");
+        f49338d.put("MAC6", "MACE 6:1");
+        f49338d.put("ima4", "IMA 4:1");
+        f49338d.put("fl32", "32-bit floating point");
+        f49338d.put("fl64", "64-bit floating point");
+        f49338d.put("in24", "24-bit integer");
+        f49338d.put("in32", "32-bit integer");
+        f49338d.put("ulaw", "uLaw 2:1");
+        f49338d.put("alaw", "uLaw 2:1");
+        f49338d.put("ms\u0000\u0002", "Microsoft ADPCM-ACM code 2");
+        f49338d.put("ms\u0000\u0011", "DVI/Intel IMAADPCM-ACM code 17");
+        f49338d.put("dvca", "DV Audio");
+        f49338d.put("QDMC", "QDesign music");
+        f49338d.put("QDM2", "QDesign music version 2");
+        f49338d.put("Qclp", "QUALCOMM PureVoice");
+        f49338d.put("ms\u0000U", "MPEG-1 layer 3, CBR only (pre-QT4.1)");
+        f49338d.put(".mp3", "MPEG-1 layer 3, CBR & VBR (QT4.1 and later)");
+        f49338d.put("mp4a", "MPEG-4, Advanced Audio Coding (AAC)");
+        f49338d.put("ac-3", "Digital Audio Compression Standard (AC-3, Enhanced AC-3)");
+        f49338d.put("aac ", "ISO/IEC 144963-3 AAC");
+        f49338d.put("agsm", "Apple GSM 10:1");
+        f49338d.put("alac", "Apple Lossless Audio Codec");
+        f49338d.put("conv", "Sample Format");
+        f49338d.put("dvi ", "DV 4:1");
+        f49338d.put("eqal", "Frequency Equalizer");
+        f49338d.put("lpc ", "LPC 23:1");
+        f49338d.put("mixb", "8-bit Mixer");
+        f49338d.put("mixw", "16-bit Mixer");
+        f49338d.put("MS\u0000\u0002", "Microsoft ADPCM");
+        f49338d.put("MS\u0000\u0011", "DV IMA");
+        f49338d.put("MS\u0000U", "MPEG3");
+        f49338d.put("ratb", "8-bit Rate");
+        f49338d.put("ratw", "16-bit Rate");
+        f49338d.put("sour", "Sound Source");
+        f49338d.put("str1", "Iomega MPEG layer II");
+        f49338d.put("str2", "Iomega MPEG *layer II");
+        f49338d.put("str3", "Iomega MPEG **layer II");
+        f49338d.put("str4", "Iomega MPEG ***layer II");
+        f49338d.put("lpcm", "Linear Pulse Code Modulation");
+        f49336b.put("3g2a", "3GPP2 Media (.3G2) compliant with 3GPP2 C.S0050-0 V1.0");
+        f49336b.put("3g2b", "3GPP2 Media (.3G2) compliant with 3GPP2 C.S0050-A V1.0.0");
+        f49336b.put("3g2c", "3GPP2 Media (.3G2) compliant with 3GPP2 C.S0050-B v1.0");
+        f49336b.put("3ge6", "3GPP (.3GP) Release 6 MBMS Extended Presentations");
+        f49336b.put("3ge7", "3GPP (.3GP) Release 7 MBMS Extended Presentations");
+        f49336b.put("3gg6", "3GPP Release 6 General Profile");
+        f49336b.put("3gp1", "3GPP Media (.3GP) Release 1 (probably non-existent)");
+        f49336b.put("3gp2", "3GPP Media (.3GP) Release 2 (probably non-existent)");
+        f49336b.put("3gp3", "3GPP Media (.3GP) Release 3 (probably non-existent)");
+        f49336b.put("3gp4", "3GPP Media (.3GP) Release 4");
+        f49336b.put("3gp5", "3GPP Media (.3GP) Release 5");
+        f49336b.put("3gp6", "3GPP Media (.3GP) Release 6 Basic Profile");
+        f49336b.put("3gp6", "3GPP Media (.3GP) Release 6 Progressive Download");
+        f49336b.put("3gp6", "3GPP Media (.3GP) Release 6 Streaming Servers");
+        f49336b.put("3gs7", "3GPP Media (.3GP) Release 7 Streaming Servers");
+        f49336b.put("avc1", "MP4 Base w/ AVC ext [ISO 14496-12:2005]");
+        f49336b.put("CAEP", "Canon Digital Camera");
+        f49336b.put("caqv", "Casio Digital Camera");
+        f49336b.put("CDes", "Convergent Design");
+        f49336b.put("da0a", "DMB MAF w/ MPEG Layer II aud, MOT slides, DLS, JPG/PNG/MNG images");
+        f49336b.put("da0b", "DMB MAF, extending DA0A, with 3GPP timed text, DID, TVA, REL, IPMP");
+        f49336b.put("da1a", "DMB MAF audio with ER-BSAC audio, JPG/PNG/MNG images");
+        f49336b.put("da1b", "DMB MAF, extending da1a, with 3GPP timed text, DID, TVA, REL, IPMP");
+        f49336b.put("da2a", "DMB MAF aud w/ HE-AAC v2 aud, MOT slides, DLS, JPG/PNG/MNG images");
+        f49336b.put("da2b", "DMB MAF, extending da2a, with 3GPP timed text, DID, TVA, REL, IPMP");
+        f49336b.put("da3a", "DMB MAF aud with HE-AAC aud, JPG/PNG/MNG images");
+        f49336b.put("da3b", "DMB MAF, extending da3a w/ BIFS, 3GPP timed text, DID, TVA, REL, IPMP");
+        f49336b.put("dmb1", "DMB MAF supporting all the components defined in the specification");
+        f49336b.put("dmpf", "Digital Media Project");
+        f49336b.put("drc1", "Dirac (wavelet compression), encapsulated in ISO base media (MP4)");
+        f49336b.put("dv1a", "DMB MAF vid w/ AVC vid, ER-BSAC aud, BIFS, JPG/PNG/MNG images, TS");
+        f49336b.put("dv1b", "DMB MAF, extending dv1a, with 3GPP timed text, DID, TVA, REL, IPMP");
+        f49336b.put("dv2a", "DMB MAF vid w/ AVC vid, HE-AAC v2 aud, BIFS, JPG/PNG/MNG images, TS");
+        f49336b.put("dv2b", "DMB MAF, extending dv2a, with 3GPP timed text, DID, TVA, REL, IPMP");
+        f49336b.put("dv3a", "DMB MAF vid w/ AVC vid, HE-AAC aud, BIFS, JPG/PNG/MNG images, TS");
+        f49336b.put("dv3b", "DMB MAF, extending dv3a, with 3GPP timed text, DID, TVA, REL, IPMP");
+        f49336b.put("dvr1", "DVB (.DVB) over RTP");
+        f49336b.put("dvt1", "DVB (.DVB) over MPEG-2 Transport Stream");
+        f49336b.put("F4V ", "Video for Adobe Flash Player 9+ (.F4V)");
+        f49336b.put("F4P ", "Protected Video for Adobe Flash Player 9+ (.F4P)");
+        f49336b.put("F4A ", "Audio for Adobe Flash Player 9+ (.F4A)");
+        f49336b.put("F4B ", "Audio Book for Adobe Flash Player 9+ (.F4B)");
+        f49336b.put("isc2", "ISMACryp 2.0 Encrypted File");
+        f49336b.put("iso2", "MP4 Base Media v2 [ISO 14496-12:2005]");
+        f49336b.put("isom", "MP4  Base Media v1 [IS0 14496-12:2003]");
+        f49336b.put("JP2 ", "JPEG 2000 Image (.JP2) [ISO 15444-1 ?]");
+        f49336b.put("JP20", "Unknown, from GPAC samples (prob non-existent)");
+        f49336b.put("jpm ", "JPEG 2000 Compound Image (.JPM) [ISO 15444-6]");
+        f49336b.put("jpx ", "JPEG 2000 w/ extensions (.JPX) [ISO 15444-2]");
+        f49336b.put("KDDI", "3GPP2 EZmovie for KDDI 3G cellphones");
+        f49336b.put("M4A ", "Apple iTunes AAC-LC (.M4A) Audio");
+        f49336b.put("M4B ", "Apple iTunes AAC-LC (.M4B) Audio Book");
+        f49336b.put("M4P ", "Apple iTunes AAC-LC (.M4P) AES Protected Audio");
+        f49336b.put("M4V ", "Apple iTunes Video (.M4V) Video");
+        f49336b.put("M4VH", "Apple TV (.M4V)");
+        f49336b.put("M4VP", "Apple iPhone (.M4V)");
+        f49336b.put("mj2s", "Motion JPEG 2000 [ISO 15444-3] Simple Profile");
+        f49336b.put("mjp2", "Motion JPEG 2000 [ISO 15444-3] General Profile");
+        f49336b.put("mmp4", "MPEG-4/3GPP Mobile Profile (.MP4 / .3GP) (for NTT)");
+        f49336b.put("mp21", "MPEG-21 [ISO/IEC 21000-9]");
+        f49336b.put("mp41", "MP4 v1 [ISO 14496-1:ch13]");
+        f49336b.put("mp42", "MP4 v2 [ISO 14496-14]");
+        f49336b.put("mp71", "MP4 w/ MPEG-7 Metadata [per ISO 14496-12]");
+        f49336b.put("MPPI", "Photo Player, MAF [ISO/IEC 23000-3]");
+        f49336b.put("mqt ", "Sony / Mobile QuickTime (.MQV)  US Patent 7,477,830 (Sony Corp)");
+        f49336b.put("MSNV", "MPEG-4 (.MP4) for SonyPSP");
+        f49336b.put("NDAS", "MP4 v2 [ISO 14496-14] Nero Digital AAC Audio");
+        f49336b.put("NDSC", "MPEG-4 (.MP4) Nero Cinema Profile");
+        f49336b.put("NDSH", "MPEG-4 (.MP4) Nero HDTV Profile");
+        f49336b.put("NDSM", "MPEG-4 (.MP4) Nero Mobile Profile");
+        f49336b.put("NDSP", "MPEG-4 (.MP4) Nero Portable Profile");
+        f49336b.put("NDSS", "MPEG-4 (.MP4) Nero Standard Profile");
+        f49336b.put("NDXC", "H.264/MPEG-4 AVC (.MP4) Nero Cinema Profile");
+        f49336b.put("NDXH", "H.264/MPEG-4 AVC (.MP4) Nero HDTV Profile");
+        f49336b.put("NDXM", "H.264/MPEG-4 AVC (.MP4) Nero Mobile Profile");
+        f49336b.put("NDXP", "H.264/MPEG-4 AVC (.MP4) Nero Portable Profile");
+        f49336b.put("NDXS", "H.264/MPEG-4 AVC (.MP4) Nero Standard Profile");
+        f49336b.put("odcf", "OMA DCF DRM Format 2.0 (OMA-TS-DRM-DCF-V2_0-20060303-A)");
+        f49336b.put("opf2", "OMA PDCF DRM Format 2.1 (OMA-TS-DRM-DCF-V2_1-20070724-C)");
+        f49336b.put("opx2", "OMA PDCF DRM + XBS extensions (OMA-TS-DRM_XBS-V1_0-20070529-C)");
+        f49336b.put("pana", "Panasonic Digital Camera");
+        f49336b.put("qt  ", "Apple QuickTime (.MOV/QT)");
+        f49336b.put("ROSS", "Ross Video");
+        f49336b.put("sdv ", "SD Memory Card Video");
+        f49336b.put("ssc1", "Samsung stereoscopic, single stream (patent pending, see notes)");
+        f49336b.put("ssc2", "Samsung stereoscopic, dual stream (patent pending, see notes)");
+        f49339e.put(" KD ", "Kodak");
+        f49339e.put("AR.D", "Parrot AR.Drone");
+        f49339e.put("FFMP", "FFmpeg");
+        f49339e.put("GIC ", "General Imaging Co.");
+        f49339e.put("KMPI", "Konica-Minolta");
+        f49339e.put("NIKO", "Nikon");
+        f49339e.put("SMI ", "Sorenson Media Inc.");
+        f49339e.put("ZORA", "Zoran Corporation");
+        f49339e.put("appl", "Apple");
+        f49339e.put("fe20", "Olympus (fe20)");
+        f49339e.put("kdak", "Kodak");
+        f49339e.put("leic", "Leica");
+        f49339e.put("mino", "Minolta");
+        f49339e.put("niko", "Nikon");
+        f49339e.put("olym", "Olympus");
+        f49339e.put("pana", "Panasonic");
+        f49339e.put("pent", "Pentax");
+        f49339e.put("pr01", "Olympus (pr01)");
+        f49339e.put("sany", "Sanyo");
+    }
+
+    public static String a(int i11, String str) {
+        return (f49335a.containsKey(Integer.valueOf(i11)) && f49335a.get(Integer.valueOf(i11)).containsKey(str)) ? f49335a.get(Integer.valueOf(i11)).get(str) : "Unknown";
+    }
+
+    public static void b(int i11, String str, cc.b bVar) {
+        bVar.R(i11, a(i11, str));
+    }
+}

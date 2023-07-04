@@ -1,0 +1,31 @@
+package com.plaid.internal;
+
+import android.view.View;
+
+/* loaded from: classes2.dex */
+public final class pc extends kotlin.jvm.internal.u implements h00.l<String, vz.b0> {
+
+    /* renamed from: a  reason: collision with root package name */
+    public final /* synthetic */ oc f19252a;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public pc(oc ocVar) {
+        super(1);
+        this.f19252a = ocVar;
+    }
+
+    @Override // h00.l
+    public vz.b0 invoke(String str) {
+        String viewTag = str;
+        kotlin.jvm.internal.s.g(viewTag, "viewTag");
+        sa saVar = this.f19252a.f19183e;
+        if (saVar == null) {
+            kotlin.jvm.internal.s.x("binding");
+            saVar = null;
+        }
+        View findViewWithTag = saVar.f19439d.findViewWithTag(viewTag);
+        findViewWithTag.requestFocus();
+        findViewWithTag.requestFocusFromTouch();
+        return vz.b0.f54756a;
+    }
+}

@@ -1,0 +1,61 @@
+package org.bouncycastle.crypto;
+
+/* loaded from: classes5.dex */
+public abstract class w {
+    protected int iterationCount;
+    protected byte[] password;
+    protected byte[] salt;
+
+    public static byte[] PKCS12PasswordToBytes(char[] cArr) {
+        if (cArr == null || cArr.length <= 0) {
+            return new byte[0];
+        }
+        byte[] bArr = new byte[(cArr.length + 1) * 2];
+        for (int i11 = 0; i11 != cArr.length; i11++) {
+            int i12 = i11 * 2;
+            bArr[i12] = (byte) (cArr[i11] >>> '\b');
+            bArr[i12 + 1] = (byte) cArr[i11];
+        }
+        return bArr;
+    }
+
+    public static byte[] PKCS5PasswordToBytes(char[] cArr) {
+        if (cArr != null) {
+            int length = cArr.length;
+            byte[] bArr = new byte[length];
+            for (int i11 = 0; i11 != length; i11++) {
+                bArr[i11] = (byte) cArr[i11];
+            }
+            return bArr;
+        }
+        return new byte[0];
+    }
+
+    public static byte[] PKCS5PasswordToUTF8Bytes(char[] cArr) {
+        return cArr != null ? r70.m.j(cArr) : new byte[0];
+    }
+
+    public abstract i generateDerivedMacParameters(int i11);
+
+    public abstract i generateDerivedParameters(int i11);
+
+    public abstract i generateDerivedParameters(int i11, int i12);
+
+    public int getIterationCount() {
+        return this.iterationCount;
+    }
+
+    public byte[] getPassword() {
+        return this.password;
+    }
+
+    public byte[] getSalt() {
+        return this.salt;
+    }
+
+    public void init(byte[] bArr, byte[] bArr2, int i11) {
+        this.password = bArr;
+        this.salt = bArr2;
+        this.iterationCount = i11;
+    }
+}
